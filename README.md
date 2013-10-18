@@ -6,6 +6,7 @@ For the most part, we will have:
 
 	variables & values, fundamental data types
 	functions
+	logic
 	iteration
 	arithmetic
 	string operations
