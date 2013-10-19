@@ -4,9 +4,11 @@ The intent of this repo is to create a quick reference for a variety of language
 
 For the most part, we will have:
 
+	comments
 	variables & values, fundamental data types
 	functions
-	logic
+	logic & expressions
+	exception handling
 	iteration
 	arithmetic
 	string operations
