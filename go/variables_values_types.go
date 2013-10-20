@@ -13,7 +13,7 @@ func printit(x ...interface{}) {
 	}
 }
 
-func main() {
+func local_variables() {
 
 	fmt.Println("go: Variables, values, and data types")
 
@@ -62,4 +62,22 @@ func main() {
 	_bytes := []byte{1, 2, 3, 4}
 	_strings := []string{"hey", "whats", "up"}
 	printit(_bytes, _strings)
+}
+
+
+
+func structures() {
+	type Message struct{
+		x int
+		y int
+	}
+	var m Message
+	m.x = 1
+	m.y = 2
+}
+
+
+func main() {
+	local_variables()
+	structures()
 }
