@@ -77,7 +77,52 @@ func structures() {
 }
 
 
+
+func type_switch(t interface{}) {
+	fmt.Println("type_switch:")
+	switch t := t.(type) {
+		default: fmt.Printf("\tunexptected type %T\n", t)
+		case bool: fmt.Printf("\tbool %t\n", t)
+		case int: fmt.Printf("\tint %d\n", t)
+		case string: fmt.Printf("\tstring %s\n", t)
+	}
+}
+
+
+type Buf struct {
+	len int
+}
+
+func new_example() {
+	/* allocates memory, zero's it: returns a ptr to newly allocated zero value of type T */
+	fmt.Println("new_example:")
+	buf := new(Buf) // *Buf
+	var buf2 Buf // Buf
+	fmt.Println("\t",buf,buf2)
+}
+
+func make_example() {
+	/* creates initialized slices, channels, or maps only */
+	a := make([]int,10,100)
+	fmt.Println("make_example:")
+	fmt.Println("\t",a)
+}
+
+
+func composite_literal() (*Buf) {
+	var b Buf
+	return &b
+}
+
+
 func main() {
 	local_variables()
 	structures()
+	type_switch(1)
+	type_switch(true)
+	type_switch("hi")
+	new_example()
+	make_example()
+	b := composite_literal()
+	b.len = 0
 }
