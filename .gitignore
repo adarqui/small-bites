@@ -3,3 +3,7 @@ node_modules
 pkg
 src
 bin
+.cabal-sandbox
+cabal.sandbox.config
+*.o
+*.hi
