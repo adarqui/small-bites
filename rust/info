@@ -1,3 +1,9 @@
+rust/src/lirustpkg/tests.rs
+rust/src/test/bench/
+
+	- etc
+
+
 rust tutorial:
 
 	doc.rust-lange.org/doc/master/tutorial.html
